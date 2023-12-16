@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-oItbqZzfyf7Ds9UG7v75CxSXF5iXeQCQp7KIpI1dN4lREvu3w9LnybFNJkwC2Y+6I8E5Mx5Kk8cEc7Xp4FcbgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <title>Adwala - Advertise with Us</title>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <img src="C:\Users\renoj\OneDrive\Pictures\AD-letters-logo.webp" alt="Adwala Logo" class="logo">
+            <i class="fas fa-ad"></i>
+            <h1>Adwala - Advertise with Us</h1>
+        </div>
+    </header>
+
+    <div class="landing-page">
+        <h1>Welcome to Adwala!</h1>
+        <p>Choose an option:</p>
+        <button onclick="redirectTo('login')">Login</button>
+        <button onclick="redirectTo('register')">Register</button>
+    </div>
+
+    <div id="registration" style="display: none;">
+        <h2>Company Login</h2>
+        <form id="registrationForm">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <!-- Add more registration fields as needed -->
+
+            <button type="button" onclick="showAdvertisementUpload()">Login</button>
+        </form>
+    </div>
+
+    <div id="companyInfo" style="display: none;">
+        <h2>Company Registration</h2>
+        <form id="companyInfoForm">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+
+            <button type="button" onclick="registerCompany()">Register</button>
+        </form>
+    </div>
+
+    <!-- ... (previous code) ... -->
+
+    <section id="advertisementUpload" style="display: none;">
+        <h2>Advertisement Upload</h2>
+        <form id="adUploadForm">
+            <label for="adType">Advertisement Type:</label>
+            <select id="adType" required>
+                <option value="image">Image (JPG)</option>
+                <option value="video">Video</option>
+            </select>
+
+            <div id="fileUploadContainer">
+                <label for="adFile">Upload Advertisement:</label>
+                <input type="file" id="adFile" accept=".jpg, .jpeg, .png, .mp4" required>
+
+                <div id="videoDurationContainer" style="display: none;">
+                    <label for="videoDuration">Video Duration (seconds):</label>
+                    <input type="number" id="videoDuration" min="1" placeholder="Enter duration">
+                </div>
+            </div>
+
+            <button type="button" onclick="showPaymentOptions()">Upload</button>
+        </form>
+    </section>
+
+    <!-- ... (remaining code) ... -->
+
+    <section id="paymentOptions" style="display: none;">
+        <h2>Payment Options</h2>
+        <form id="paymentForm">
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" required>
+                <option value="creditCard">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="netbanking">Netbanking</option>
+                <option value="upi">UPI</option>
+            </select>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Adwala. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

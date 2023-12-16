@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #69ddf1; /* Light gray background color */
+}
+
+header {
+    background-color: #333; /* Dark background color for the header */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 40px; /* Adjust the height of the logo as needed */
+    margin-right: 10px; /* Spacing between logo and title */
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif; /* Fancy font for the title */
+    margin-left: 10px; /* Spacing between icon and title */
+}
+
+/* ... (rest of your CSS) ... */
+
+
+section {
+    background-color: #41dd16; /* White background color for sections */
+    padding: 50px;
+    margin: 70px;
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for sections */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+textarea, select, input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners for form elements */
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #333; /* Dark button background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777; /* Light gray text color for the footer */
+}
