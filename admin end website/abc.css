@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.header-text {
+    text-align: left;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+.chart-container {
+    width: 300px;
+    margin: 20px;
+}
+
+.metrics-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    margin-top: 20px;
+}
+
+.metric {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.metric h2 {
+    margin-bottom: 10px;
+}
+
+.metric p {
+    margin: 0;
+}
