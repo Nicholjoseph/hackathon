@@ -1,4 +1,4 @@
-this is a hackathon project contains static web pages made using html and css that showcases a place for vendors to sell their goods and client to buy.
+this is a hackathon project contains web pages made using html and css that showcases a webpage for adwala a advertising company.
 
 
 
